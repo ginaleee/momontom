@@ -1,6 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type='javascript' src='src/index.js'></script>
+        <title>Something</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
     </head>
+
+    <body>
+        <div class="container">
+            <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+            
+            <form class="js-form form">
+                <input type="text" placeholder="what is your name?"></input>
+            </form>
+            
+            <h4 class="js-greeting greetings"></h4>
+
+            <form class="js-toDoForm">
+                <input type="text" placeholder="Add task" />
+            </form>
+            <h2>Pending</h2>
+            <ul class="js-toDoPending"></ul>
+            <h2>Finished</h2>
+            <ul class="js-toDoFinished"></ul>
+
+            <form class="js-WeatherForm"></form>
+                <h1 id="temperature"></h1>
+                <h2 id="description"></h2>
+                <p id="location"></p>
+
+            <span class="js-weather"></span>
+            <script src='src/clock.js'></script>
+            <script src='src/greeting.js'></script>
+            <script src="src/todo.js"></script>
+            <script src="src/weather.js"></script>
+            <script src="src/bg.js"></script>
+        </div>
+    </body>
 </html>
